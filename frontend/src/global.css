@@ -1,0 +1,49 @@
+:root {
+    --backgroundSecondary: #242529;
+    --background: #fff;
+    --text: #E5E5E5;
+    --textSecun: #808080;
+    --colorPrimary: #A46BFF;
+    --colorSecondary: #9740DE;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+  }
+
+  @media(max-width: 1080px) {
+    html {
+        font-size: 93.75%;
+    }
+  }
+  @media(max-width: 720px) {
+    html {
+        font-size: 87.5%;
+    }
+  }
+
+  body {
+    background: var(--background);
+    -webkit-font-smoothing: antialiased;
+
+  }
+
+  button, input, textarea, body {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+  }
+  h1, h2, h3, h4, h5, h6, strong {
+    font-weight: 500;
+    color: var(--text);
+  }
+
+  button {
+    cursor: pointer;
+  
+  }
+  [disabled] {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }

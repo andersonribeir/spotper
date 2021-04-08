@@ -45,9 +45,9 @@ CREATE TABLE Periodo_Musical
 (
     cod_periodo_musical smallint NOT NULL,
 	nome varchar(45) NOT NULL,
-    intervalo_tempo_inicio DATE NOT NULL,
-    intervalo_tempo_final DATE ,
-    descricao VARCHAR,
+    intervalo_tempo_inicio int NOT NULL,
+    intervalo_tempo_final int ,
+    descricao text,
     CONSTRAINT PeriodoMusicalPK  PRIMARY KEY (cod_periodo_musical),
 
 )ON bdspotper_fg01
@@ -59,7 +59,6 @@ Create TABLE Compositor
     data_nascimento DATE NOT NULL,
     data_morte DATE,
     LOCAL_nascimento VARCHAR(100) NOT NULL,
-    cod_periodo_musical smallint not NULL,
     cod_periodomusical_fk smallint NOT NULL,
 
     CONSTRAINT Compositor_PK  PRIMARY KEY (cod_compositor),
@@ -73,7 +72,7 @@ CREATE TABLE Gravadora
 (
     cod_gravadora SMALLINT not null,
     nome VARCHAR(45) not null,
-    Endereco_homepage TEXT not null,
+    Endereco_homepage TEXT,
     Endereco_fisico TEXT not null,
     CONSTRAINT Gravadora_PK PRIMARY KEY (cod_gravadora)
 ) ON bdspotper_fg01
@@ -127,7 +126,7 @@ CREATE TABLE Faixa_Album
 
 CREATE TABLE Faixa_Playlist
 (
-    ultima_vez_tocada DATE NOT NULL,
+    ultima_vez_tocada DATE,
     numero_vez_tocada int NOT NULL,
     faixa_num_faixa_fk smallint NOT NULL,
     playlist_cod_fk smallint NOT NULL,
