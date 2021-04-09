@@ -1,3 +1,14 @@
-.move_left{
-margin-left: 20%;
+.container_album{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    background: #121212;
+}
+.album_page{
+    display: flex;
+    width: 90%;
+    height: 100vh;
+    margin: 25px 0 0 50px;
+    
 }

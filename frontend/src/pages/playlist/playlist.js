@@ -1,6 +1,9 @@
 import React,{useEffect,useState} from 'react'
 import { AiFillPushpin } from 'react-icons/ai';
 import Header from "../../components/header/header";
+import Playlists from "../../components/playlists/playlists";
+import './playlist.css'
+
 import api from '../api'
 
 
@@ -17,16 +20,23 @@ export default function Playlist(){
     },[])
 
     return(<>
-        <Header/>
-        <h1>Playlist</h1>
-        {playlist.map(playlist=>(
+        <section className='container_playlist'>
+            <Header/>
+            <div className='playlist_page'>
+            <Playlists titulo='Playlist1'/>  {/*Recebe Playlist1*/}
+            <Playlists titulo='Playlist2'/>
+
+            {playlist.map(playlist=>(
             <div >
                 {playlist.cod}
                 {playlist.nome}
             </div>
 
-        ))}
+            ))}
+
+            </div>
+            
+        </section>
     </>
-    
     )
 }

@@ -12,6 +12,7 @@ import './header.css';
 export default function Header(){
     const history= useHistory()
     return (
+        <div>
         <SideNav
             onSelect={(selected) => {   
                 const to = '/' + selected;
@@ -37,7 +38,7 @@ export default function Header(){
                     Playlist
                 </NavText>
             </NavItem>
-            <NavItem eventKey="albuns">
+            <NavItem eventKey="album">
                 <NavIcon>
                     <IoIosAlbums/>
                 </NavIcon>
@@ -47,5 +48,7 @@ export default function Header(){
             </NavItem>
         </SideNav.Nav>
     </SideNav>
+    </div>
     )
+    
 }
