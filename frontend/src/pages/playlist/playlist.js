@@ -2,9 +2,10 @@ import React,{useEffect,useState} from 'react'
 import { AiFillPushpin } from 'react-icons/ai';
 import Header from "../../components/header/header";
 import Playlists from "../../components/playlists/playlists";
-import './playlist.css'
+import './playlist.css';
+import {useHistory } from 'react-router-dom'
 
-import api from '../api'
+import api from '../../api'
 
 
 export default function Playlist(){
@@ -19,22 +20,27 @@ export default function Playlist(){
 
     },[])
 
+    
+
     return(<>
+    
         <section className='container_playlist'>
             <Header/>
             <div className='playlist_page'>
-            <Playlists titulo='Playlist1'/>  {/*Recebe Playlist1*/}
-            <Playlists titulo='Playlist2'/>
+             
 
             {playlist.map(playlist=>(
             <div >
                 {playlist.cod}
                 {playlist.nome}
             </div>
+            
 
             ))}
+            <button className = 'playlist_button'>+</button>
 
             </div>
+            
             
         </section>
     </>

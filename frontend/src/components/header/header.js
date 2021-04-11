@@ -38,7 +38,7 @@ export default function Header(){
                     Playlist
                 </NavText>
             </NavItem>
-            <NavItem eventKey="album">
+            <NavItem eventKey="albuns">
                 <NavIcon>
                     <IoIosAlbums/>
                 </NavIcon>

@@ -7,8 +7,9 @@
 }
 .album_page{
     display: flex;
-    width: 90%;
+    width: calc(100% - 64px);
+    padding: 30px;
     height: 100vh;
-    margin: 25px 0 0 50px;
+    
     
 }

@@ -7,8 +7,38 @@
 }
 .playlist_page{
     display: flex;
-    width: 90%;
+    width: calc(100% - 64px);
     height: 100vh;
-    margin: 25px 0 0 50px;
+    padding: 30px;
     
 }
+.playlist_button {
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    height: 11px;
+    line-height: 11px;
+    color: #FFFFFF;
+    font-family: Verdana;
+    width: 34px;
+    font-size: 41px;
+    font-weight: 100;
+    padding: 28px;
+    background-color: #26B321;
+    text-shadow: 1px 1px 20px #000000;
+    border: solid #99C624 1px;
+    text-decoration: none;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center ;
+    margin: auto;
+ }
+ .playlist_button:hover {
+    background: #000000;
+    border: solid #000000 1px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    text-decoration: none;
+ }
