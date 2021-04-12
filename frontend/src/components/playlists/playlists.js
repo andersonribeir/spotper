@@ -1,12 +1,13 @@
 import React from 'react';
-import ImagemAlbum from '../../img/img2.png';
+import ImagemPlaylist from '../../img/pngplaylist.png';
 import './playlists.css';
 
-export default function Playlists({titulo}){
+export default function Playlists({titulo,onClick}){
     return(
-        <section className='container_playlist-component'>
-            <img src={ImagemAlbum}/> 
-            <button>{titulo}</button>  
+        <section className='container_album-component'>
+            <img src={ImagemPlaylist} onClick = {onClick} /> 
+            <button type = 'button' onClick = {onClick}>{titulo}</button>  
+            
         </section>
     );
 }

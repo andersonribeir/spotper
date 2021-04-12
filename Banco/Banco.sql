@@ -1,13 +1,13 @@
 use BDSpotPer
-create Table Playlist
-(
-    cod smallint NOT NULL,
-    nome varchar(45) NOT NULL,
-    data_criacao DATE NOT NULL,
-    tempo_total int NOT NULL,
-    CONSTRAINT playlist_PK PRIMARY KEY(cod),
+    create Table Playlist
+    (
+        cod smallint IDENTITY(1,1) NOT NULL ,
+        nome varchar(45) NOT NULL,
+        data_criacao DATE NOT NULL,
+        tempo_total int NOT NULL,
+        CONSTRAINT playlist_PK PRIMARY KEY(cod),
 
-) ON bdspotper_fg02
+    ) ON bdspotper_fg02
 
 create table Composicao
 (

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import Header from "../../components/header/header";
-import ImagemAlbum from '../../img/img2.png';
+import ImagemAlbum from '../../img/pngfaixa.png';
 import './faixa.css'
 
 import { useParams } from 'react-router-dom'

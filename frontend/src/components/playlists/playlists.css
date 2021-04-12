@@ -1,4 +1,4 @@
-.container_playlist-component{
+.container_album-component{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -11,11 +11,11 @@
     margin: 0 15px 0 0;
     background: #121212;
 }
-.container_playlist-component > img{
+.container_album-component > img{
     width: 100px;
     border-radius: 100%;
 }
-.container_playlist-component > button {
+.container_album-component > button {
     border: none;
     color: #fff;
     font-weight: 200;
@@ -25,12 +25,12 @@
     font-family: 'Roboto Condensed', sans-serif;
     padding: 3px 5px;
 }
-.container_playlist-component > button:hover {
+.container_album-component > button:hover {
     /* padding: 10px; */
     border-bottom: 2px solid rgb(255, 255, 255);
     border-bottom-width: thin;
 }
-.container_playlist-component:hover { 
+.container_album-component:hover { 
     opacity: 0.7;
     cursor: pointer;
 }
